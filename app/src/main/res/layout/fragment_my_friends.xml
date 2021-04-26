@@ -4,20 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/list"
     >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:background="@drawable/teman"
 
+        />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/valor"
-        android:gravity="center"
-        android:text="ini fragment
-           Teman"
-        android:textColor="@color/cardview_light_background"
-        android:fontFamily="serif-monospace"
-        android:textSize="40dp" />
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:text="List Teman"
+        android:gravity="center_horizontal"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_listMyfriends"
+        android:layout_margin="16dp"/>
 
 
 </LinearLayout>
